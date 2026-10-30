@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>酒糟膚質：12 種處理方式比較</title>
+<meta name="description" content="酒糟膚質（Rosacea）12 種處理方式的研究整理：機轉、用法、療效、風險與事實查核。">
+<style>
+:root{
+  --ground:#F4F0EF; --step:#E9E1DF; --ink:#1C1517; --soft:#4A3F42;
+  --red:#B42318; --red-deep:#7C1710; --on-red:#FFFFFF;
+  --gutter:clamp(16px,3vw,40px);
+  --font:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ground);color:var(--ink);font:400 17px/1.65 var(--font);padding-bottom:0}
+a{color:inherit;text-underline-offset:.2em}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.field-red a:focus-visible,.field-red button:focus-visible{outline-color:#fff}
+::selection{background:var(--red);color:#fff}
+.wrap{padding:0 var(--gutter)}
+h1,h2,h3{font-weight:700;letter-spacing:-.02em;line-height:1.08}
+
+/* bar */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px var(--gutter)}
+.bar b{font-size:18px;letter-spacing:0}
+.bar nav{display:flex;gap:clamp(14px,2.4vw,32px);font-size:15px}
+.bar nav a{text-decoration:none;padding:6px 0}
+.bar nav a:hover{text-decoration:underline}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--gutter);padding:0 var(--gutter);min-height:calc(100svh - 64px)}
+.hero .l{display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,5vw,72px) 0}
+.hero h1{font-size:clamp(40px,6.4vw,112px);line-height:1}
+.hero p{max-width:34em;margin-top:clamp(24px,3vw,40px);font-size:clamp(17px,1.5vw,21px)}
+.btn{display:inline-block;margin-top:32px;background:var(--ink);color:var(--ground);padding:16px 28px;text-decoration:none;font-weight:600;transition:transform .2s var(--ease),background .2s;align-self:flex-start}
+.btn:hover{background:var(--red)}
+.btn:active{transform:translateY(2px)}
+.hero .r{background:var(--red);color:var(--on-red);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(20px,3vw,40px);overflow:hidden;position:relative}
+.hero .r .big{font-size:clamp(160px,26vw,420px);font-weight:800;line-height:.8;letter-spacing:-.06em}
+.hero .r p{margin:0;max-width:16em;font-size:clamp(17px,1.6vw,22px);font-weight:600}
+.hero .r svg{position:absolute;right:-12%;top:-8%;width:80%;opacity:.28}
+
+.sec{padding:clamp(80px,12vw,200px) 0 0}
+.sec h2{font-size:clamp(34px,5.2vw,84px);max-width:16em}
+.sec .lead{max-width:36em;margin-top:24px;font-size:19px}
+
+/* picker */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 28px}
+.chip{font:inherit;font-weight:600;border:0;background:var(--step);color:var(--ink);padding:14px 22px;cursor:pointer;min-height:48px;transition:background .2s,color .2s,transform .15s var(--ease)}
+.chip:hover{background:#DCCFCB}
+.chip:active{transform:translateY(2px)}
+.chip[aria-pressed="true"]{background:var(--red);color:#fff}
+.count{font-weight:600;margin-bottom:16px}
+.tools{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.tools button{font:inherit;background:none;border:0;text-decoration:underline;cursor:pointer;padding:8px 0;color:var(--ink)}
+
+/* list */
+.item{background:var(--step);margin-bottom:10px}
+.item[hidden]{display:none}
+.item summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1.1fr) auto minmax(0,1.4fr);gap:8px 24px;align-items:baseline;padding:22px clamp(16px,2.4vw,32px);transition:background .2s}
+.item summary::-webkit-details-marker{display:none}
+.item summary:hover{background:#DFD4D1}
+.item .n{font-size:clamp(20px,2.2vw,30px);font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.item .c{font-weight:600;color:var(--red)}
+.item .s{color:var(--soft);font-size:15px}
+.item[open] summary{background:var(--red);color:#fff}
+.item[open] .c,.item[open] .s{color:#fff}
+.item .body{padding:clamp(20px,3vw,40px) clamp(16px,2.4vw,32px) clamp(24px,3vw,44px)}
+.item .en{font-weight:600;color:var(--soft);margin-bottom:20px}
+.item dl{display:grid;gap:0}
+.item dl>div{display:grid;grid-template-columns:minmax(120px,.28fr) 1fr;gap:8px 32px;padding:14px 0}
+.item dl>div:nth-child(odd){background:rgba(255,255,255,.35);margin:0 calc(-1 * clamp(16px,2.4vw,32px));padding-left:clamp(16px,2.4vw,32px);padding-right:clamp(16px,2.4vw,32px)}
+.item dt{font-weight:700}
+.item dd p{max-width:46em}
+.item dd ul{padding-left:1.2em;display:grid;gap:6px;overflow-wrap:anywhere}
+.item .gap{margin-top:18px;color:var(--soft);font-size:15px}
+
+
+/* triggers */
+.sub{font-size:clamp(26px,3.4vw,44px);margin:64px 0 24px}
+.trig{list-style:none;padding:0;display:grid;gap:10px}
+.trig li{display:grid;grid-template-columns:minmax(150px,.26fr) 1fr;gap:8px 32px;background:var(--step);padding:22px clamp(16px,2.4vw,32px);align-items:start}
+.trig .fig b{display:block;font-size:clamp(44px,6vw,88px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--red)}
+.trig .fig small{display:block;margin-top:6px;font-size:14px;color:var(--soft)}
+.trig h4{font-size:clamp(20px,2vw,28px);line-height:1.25;margin-bottom:8px}
+.trig .tx p{max-width:46em}
+.trig .adv{margin-top:10px;font-weight:600}
+.trig .adv b{color:var(--red);margin-right:10px}
+.trig .evd{margin-top:6px;font-size:14px;color:var(--soft)}
+.plain{padding-left:1.2em;display:grid;gap:6px;max-width:46em}
+
+/* table */
+.tablewrap{margin-top:48px}
+table{border-collapse:collapse;width:100%;font-size:15.5px}
+thead th{text-align:left;background:var(--ink);color:var(--ground);padding:14px 16px;font-weight:600}
+tbody th,tbody td{text-align:left;vertical-align:top;padding:18px 16px;background:var(--step)}
+tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:#F0E9E7}
+tbody th{font-weight:700;width:18%}
+tbody th span{display:block;color:var(--red);font-weight:600;font-size:14px;margin-top:2px}
+
+/* fact check */
+.field-red{background:var(--red);color:var(--on-red);margin-top:clamp(80px,12vw,200px);padding:clamp(56px,9vw,140px) 0}
+.field-red .sec{padding:0}
+.field-red ul.facts{list-style:none;padding:0;margin-top:48px;display:grid;gap:10px}
+.facts li{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,1.2fr);gap:8px 28px;background:var(--red-deep);padding:18px clamp(16px,2vw,28px);align-items:baseline}
+.facts b{font-size:16px}
+.facts b.warn{background:#fff;color:var(--red);padding:2px 10px;justify-self:start}
+.facts .cl{font-weight:600}
+.facts .ev{font-size:15px;opacity:.95}
+.issues{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;padding:0;list-style:none}
+.issues li{padding:6px 0}
+.disc{margin-top:40px;font-weight:600;max-width:42em}
+
+/* sources */
+.sources ul{margin-top:36px;padding:0;list-style:none;display:grid;gap:4px;columns:2;column-gap:40px}
+.sources li{break-inside:avoid;padding:6px 0;overflow-wrap:anywhere}
+
+footer{margin-top:clamp(80px,12vw,200px);background:var(--ink);color:var(--ground);padding:clamp(40px,6vw,88px) var(--gutter) 32px}
+footer .name{font-size:clamp(56px,15vw,260px);font-weight:800;letter-spacing:-.05em;line-height:.9}
+footer p{margin-top:28px;max-width:44em;color:#D9CFCC;font-size:15px}
+
+/* motion: content stays visible when JS is off */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.chip{transition:none}
+}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero .r{min-height:60vw;order:2;gap:20px}
+  .hero .r .big{font-size:clamp(120px,40vw,300px);line-height:.85}
+  .item summary{grid-template-columns:1fr;gap:4px}
+  .item dl>div{grid-template-columns:1fr;gap:2px}
+  .trig li{grid-template-columns:1fr}
+  .facts li{grid-template-columns:1fr}
+  .issues{grid-template-columns:1fr}
+  .sources ul{columns:1}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .bar nav a:nth-child(n+3){display:none}
+  thead{position:absolute;left:-9999px}
+  table,tbody,tr,th,td{display:block;width:100%}
+  tbody tr{margin-bottom:10px}
+  tbody th,tbody td{padding:12px 16px}
+  tbody td::before{content:attr(data-l);display:block;font-weight:700;color:var(--red);font-size:14px}
+  tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:var(--step)}
+  .chip{flex:1 1 calc(50% - 10px)}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="bar">
+  <b>酒糟膚質研究</b>
+  <nav aria-label="頁面導覽"><a href="#pick">選處理方式</a><a href="#triggers">誘因</a><a href="#compare">比較表</a><a href="#check">事實查核</a><a href="#sources">資料來源</a></nav>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="top">
+  <div class="l">
+    <h1 id="top">酒糟膚質<br>12 種處理比較</h1>
+    <p>從誘因避免、外用與口服藥物，到雷射與眼型處理：每一項的機轉、用法、療效、風險，以及我們查核過的數字與來源。</p>
+    <a class="btn" href="#pick">依臉上的狀況篩選</a>
+  </div>
+  <div class="r" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#fff" stroke-width="14"/><circle cx="100" cy="100" r="60" fill="none" stroke="#fff" stroke-width="14"/><circle cx="100" cy="100" r="24" fill="#fff"/></svg>
+    <span class="big">12</span>
+    <p>種處理方式，依泛紅、丘疹膿疱、增生、眼睛四種表現分類。</p>
+  </div>
+</section>
+
+<div class="wrap">
+<section class="sec" id="pick" aria-labelledby="h-pick">
+  <h2 id="h-pick" class="reveal">先選你臉上最明顯的表現</h2>
+  <p class="lead reveal">不同的表現適用不同的處理。點選一項，下方清單只留下相關的選項；沒有開啟 JavaScript 時會顯示全部。</p>
+  <div class="chips" role="group" aria-label="依表現篩選" id="chips" hidden>
+    <button class="chip" type="button" data-f="all" aria-pressed="true">全部</button>
+    <button class="chip" type="button" data-f="er" aria-pressed="false">持續性泛紅、潮紅</button>
+    <button class="chip" type="button" data-f="pp" aria-pressed="false">丘疹與膿疱</button>
+    <button class="chip" type="button" data-f="ph" aria-pressed="false">皮膚增厚（鼻瘤型）</button>
+    <button class="chip" type="button" data-f="oc" aria-pressed="false">眼睛不適</button>
+  </div>
+  <div class="tools"><p class="count" id="count" aria-live="polite"></p><button type="button" id="toggle" hidden>全部展開</button></div>
+  <div id="list">
+<details class="item" id="t-trigger_avoidance_and_basic_skin_care" data-tags="er pp ph oc"><summary><span class="n">誘因避免與基礎護理</span><span class="c">非藥物</span><span class="s">All rosacea phenotypes, especially flushing and persistent erythema, plus sensitive skin symptoms (burning,…</span></summary><div class="body"><p class="en">Trigger avoidance and basic skin care</p><dl><div><dt>機轉</dt><dd><p>Foundational non-pharmacological measures: patient education, avoidance of individual triggers and irritants, barrier-supportive skin care (gentle cleanser, moisturizer), and photoprotection. Aims to reduce neurovascular/innate-immune activation and improve skin barrier function; no single defined mechanism.</p></dd></div><div><dt>核准狀態</dt><dd><p>Not a regulated drug; no approval applicable. Sunscreens and moisturizers are regulated as OTC products/cosmetics depending on jurisdiction. Moisturizers and cleansers marketed for rosacea are used as adjuncts.</p></dd></div><div><dt>適用表現</dt><dd><p>All rosacea phenotypes, especially flushing and persistent erythema, plus sensitive skin symptoms (burning, stinging, dryness); used as background for papulopustular, phymatous and ocular disease.</p></dd></div><div><dt>用法</dt><dd><p>No dose. Typical advice: cleanse once or twice daily with a gentle non-soap cleanser, apply moisturizer daily, broad-spectrum sunscreen (SPF 30-50, mineral filters often preferred for sensitive skin) every morning with reapplication every 2-4 hours when outdoors, keep a trigger diary to find personal triggers (heat, sun, alcohol, spicy food, stress, hot drinks, strenuous exercise, some skincare ingredients). Ongoing, lifelong.</p></dd></div><div><dt>療效</dt><dd><p>No quantified lesion-count or IGA effect. Benefit is expected on barrier function, comfort and reduction of flare frequency; as monotherapy it is insufficient for papulopustular or moderate-severe disease. Dietary trigger evidence is limited and individual.</p></dd></div><div><dt>常見副作用</dt><dd><p>Minimal. Some cleansers, sunscreens (chemical filters) or moisturizers can sting or cause irritant/allergic contact dermatitis; patch testing of new products is advised.</p></dd></div><div><dt>嚴重風險與禁忌</dt><dd><p>No serious risks. Avoid known irritants (alcohol-based toners, astringents, menthol, camphor, abrasive scrubs) and known contact allergens. Considered safe in pregnancy.</p></dd></div><div><dt>費用與可得性</dt><dd><p>Low cost; widely available OTC. Rosacea-specific cosmeceuticals are more expensive but not shown to be superior.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: safe, inexpensive, helps all subtypes, supports efficacy and tolerability of drugs. Cons: limited high-quality trial evidence, trigger identification is individual and burdensome, cannot control moderate-severe inflammatory disease alone.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li>Cochrane review of rosacea interventions: <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003262.pub4/information/en" target="_blank" rel="noopener">https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003262.pub4/information/en</a></li><li>2022 consensus algorithm on foundational measures: <a href="https://scholarlycommons.henryford.com/dermatology_articles/707" target="_blank" rel="noopener">https://scholarlycommons.henryford.com/dermatology_articles/707</a></li><li>National Rosacea Society article on consistent care: <a href="https://www.rosacea.org/rosacea-review/2023/summer/consistency-is-key-in-rosacea-care" target="_blank" rel="noopener">https://www.rosacea.org/rosacea-review/2023/summer/consistency-is-key-in-rosacea-care</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：指引定位、關鍵試驗、起效與持續。</p></div></details>
+<details class="item" id="t-topical_metronidazole" data-tags="pp"><summary><span class="n">外用 metronidazole</span><span class="c">外用藥</span><span class="s">Papulopustular rosacea (inflammatory lesions)</span></summary><div class="body"><p class="en">Topical metronidazole</p><dl><div><dt>機轉</dt><dd><p>Nitroimidazole antimicrobial/antiprotozoal; in rosacea the effect is thought to be anti-inflammatory and antioxidant (reduced reactive oxygen species, modulation of neutrophil activity) and possibly anti-Demodex, rather than classic antibacterial action.</p></dd></div><div><dt>適用表現</dt><dd><p>Papulopustular rosacea (inflammatory lesions); modest effect on erythema; no role in phymatous disease; limited benefit for flushing.</p></dd></div><div><dt>用法</dt><dd><p>0.75% applied twice daily or 1% applied once daily to affected areas; trials typically 9-12 weeks, long-term maintenance use up to ~6 months or longer is common.</p></dd></div><div><dt>常見副作用</dt><dd><p>Local irritation: burning, stinging, dryness, pruritus, erythema; generally well tolerated and with fewer local reactions than azelaic acid in several comparisons.</p></dd></div><div><dt>嚴重風險與禁忌</dt><dd><p>Rare contact dermatitis. Contraindicated with hypersensitivity to metronidazole/nitroimidazoles or parabens in some formulations. Systemic absorption is low; pregnancy category B in the old FDA system, use generally considered acceptable but individualize. Avoid eye contact.</p></dd></div><div><dt>費用與可得性</dt><dd><p>Low cost, generic available in many formulations in most markets; widely accessible.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: cheap, familiar, well tolerated, safe in pregnancy per most guidance, multiple vehicles. Cons: modest efficacy versus ivermectin and azelaic acid in some comparisons, low-quality older evidence, little effect on persistent erythema, twice-daily use for 0.75%.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li>Cochrane Interventions for rosacea: <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003262.pub4/information/en" target="_blank" rel="noopener">https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003262.pub4/information/en</a></li><li>Systematic review of rosacea treatments: <a href="https://www.em-consulte.com/en/article/372176/iconosup" target="_blank" rel="noopener">https://www.em-consulte.com/en/article/372176/iconosup</a></li><li>Comparison of 15% azelaic acid gel and 0.75% metronidazole gel: <a href="https://www.ovid.com/journals/aode/fulltext/00000737-200311000-00010~a-comparison-of-15-azelaic-acid-gel-and-075-metronidazole" target="_blank" rel="noopener">https://www.ovid.com/journals/aode/fulltext/00000737-200311000-00010~a-comparison-of-15-azelaic-acid-gel-and-075-metronidazole</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、指引定位、關鍵試驗、療效、起效與持續。</p></div></details>
+<details class="item" id="t-topical_azelaic_acid" data-tags="pp"><summary><span class="n">外用 azelaic acid</span><span class="c">外用藥</span><span class="s">Mild-to-moderate papulopustular rosacea</span></summary><div class="body"><p class="en">Topical azelaic acid</p><dl><div><dt>機轉</dt><dd><p>Naturally occurring dicarboxylic acid; anti-inflammatory via reduced reactive oxygen species and inhibition of kallikrein-5 and cathelicidin processing, plus antimicrobial and keratolytic effects.</p></dd></div><div><dt>適用表現</dt><dd><p>Mild-to-moderate papulopustular rosacea; some effect on erythema (mainly via lesion resolution); not for phymatous or ocular disease.</p></dd></div><div><dt>用法</dt><dd><p>15% gel or foam twice daily; 20% cream twice daily; trials ran 12-15 weeks, longer maintenance used clinically.</p></dd></div><div><dt>療效</dt><dd><p>About 50-60% mean reduction in inflammatory lesions at 15 weeks, approximately 10-18 percentage points better than vehicle; Cochrane analysis found azelaic acid comparable to or somewhat better than metronidazole in lesion outcomes, with more local adverse events.</p></dd></div><div><dt>常見副作用</dt><dd><p>Burning, stinging, pruritus, dryness, scaling and erythema at application site, usually mild-to-moderate and transient; more than with metronidazole in comparisons.</p></dd></div><div><dt>嚴重風險與禁忌</dt><dd><p>Contraindicated with hypersensitivity to azelaic acid or vehicle components. Rare reports of asthma exacerbation and skin hypopigmentation with use. Pregnancy: limited systemic absorption, generally considered acceptable (FDA category B in old system). Avoid eye contact.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: proven vehicle-controlled evidence, effective for lesions, safe in pregnancy per guidance, may help post-inflammatory hyperpigmentation. Cons: more initial irritation than metronidazole, twice-daily dosing, limited effect on background erythema, higher cost than metronidazole.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li>Thiboutot et al. 2003: <a href="https://pubmed.ncbi.nlm.nih.gov/12789172" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/12789172</a></li><li>Azelaic acid 15% gel review: <a href="https://pubmed.ncbi.nlm.nih.gov/14979745/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/14979745/</a></li><li>Cochrane Interventions for rosacea: <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003262.pub4/information/en" target="_blank" rel="noopener">https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003262.pub4/information/en</a></li><li>15% azelaic acid vs 0.75% metronidazole gel: <a href="https://www.ovid.com/journals/aode/fulltext/00000737-200311000-00010~a-comparison-of-15-azelaic-acid-gel-and-075-metronidazole" target="_blank" rel="noopener">https://www.ovid.com/journals/aode/fulltext/00000737-200311000-00010~a-comparison-of-15-azelaic-acid-gel-and-075-metronidazole</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、指引定位、關鍵試驗、起效與持續、費用與可得性。</p></div></details>
+<details class="item" id="t-topical_ivermectin" data-tags="pp"><summary><span class="n">外用 ivermectin</span><span class="c">外用藥</span><span class="s">Papulopustular rosacea (inflammatory papules and pustules)</span></summary><div class="body"><p class="en">Topical ivermectin</p><dl><div><dt>機轉</dt><dd><p>Semisynthetic avermectin; anti-inflammatory (reduced inflammatory cytokines/neutrophil activity) and antiparasitic (acts on glutamate-gated chloride channels of Demodex mites).</p></dd></div><div><dt>適用表現</dt><dd><p>Papulopustular rosacea (inflammatory papules and pustules); limited effect on persistent erythema or flushing.</p></dd></div><div><dt>用法</dt><dd><p>1% cream once daily to the face, for up to 12 weeks in pivotal trials; long-term use up to 52 weeks studied; continued as maintenance in practice.</p></dd></div><div><dt>療效</dt><dd><p>Inflammatory lesion count reduction about 76.0% and 75.0% vs 50.0% for vehicle at week 12. IGA clear/almost clear 38-40% vs 12-19% with vehicle.</p></dd></div><div><dt>常見副作用</dt><dd><p>Burning, skin irritation, pruritus, dryness; treatment-related AEs about 2.6-4.2% in pivotal trials, comparable to vehicle.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: once daily, high efficacy on lesions, superior to metronidazole in head-to-head trial, good tolerability, long-term data to 52 weeks. Cons: does not treat erythema, cost higher than metronidazole/azelaic acid, slower response in some patients.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li><a href="https://pubmed.ncbi.nlm.nih.gov/24595578/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/24595578/</a></li><li><a href="https://www.galderma.com/us/news/galderma-announces-positive-results-phase-3-trials-investigational-ivermectin" target="_blank" rel="noopener">https://www.galderma.com/us/news/galderma-announces-positive-results-phase-3-trials-investigational-ivermectin</a></li><li><a href="https://jddonline.com/articles/dermatology/S1545961614P1380X" target="_blank" rel="noopener">https://jddonline.com/articles/dermatology/S1545961614P1380X</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、指引定位、關鍵試驗、起效與持續、嚴重風險與禁忌、費用與可得性。</p></div></details>
+<details class="item" id="t-topical_brimonidine" data-tags="er"><summary><span class="n">外用 brimonidine</span><span class="c">外用藥</span><span class="s">Persistent facial erythema (non-transient)</span></summary><div class="body"><p class="en">Topical brimonidine</p><dl><div><dt>機轉</dt><dd><p>Selective alpha-2 adrenergic receptor agonist; causes cutaneous vasoconstriction of facial vessels, reducing persistent erythema.</p></dd></div><div><dt>適用表現</dt><dd><p>Persistent facial erythema (non-transient); does not treat papules/pustules; transient flushing not well controlled.</p></dd></div><div><dt>用法</dt><dd><p>0.33% gel (0.5% brimonidine tartrate), pea-sized amount per facial area (five areas) once daily; start with smaller amounts; effect lasts about 12 hours.</p></dd></div><div><dt>起效與持續</dt><dd><p>Onset within 30 minutes, peak at about 3-6 hours; effect wanes after about 12 hours and is not disease-modifying. Pivotal trials reported no notable rebound after stopping, but post-marketing reports describe worsening erythema beyond baseline.</p></dd></div><div><dt>常見副作用</dt><dd><p>Flushing, erythema, pruritus, burning, skin irritation, contact dermatitis; erythema/flushing AEs about 5.4% in phase 3 and 15.4% in long-term study.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: rapid onset, only vasoconstrictor class with 12-hour effect, good for event days. Cons: temporary effect, rebound/paradoxical erythema risk, irritation, cost; more rebound reports than oxymetazoline.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4557848" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC4557848</a></li><li><a href="https://www.nice.org.uk/advice/esnm43/chapter/full" target="_blank" rel="noopener">https://www.nice.org.uk/advice/esnm43/chapter/full</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5505675/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC5505675/</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、指引定位、關鍵試驗、療效、嚴重風險與禁忌、費用與可得性。</p></div></details>
+<details class="item" id="t-topical_oxymetazoline" data-tags="er"><summary><span class="n">外用 oxymetazoline</span><span class="c">外用藥</span><span class="s">Persistent facial erythema</span></summary><div class="body"><p class="en">Topical oxymetazoline</p><dl><div><dt>機轉</dt><dd><p>Selective alpha-1A adrenergic receptor agonist (also some alpha-2 activity); vasoconstriction of cutaneous vessels reduces persistent erythema.</p></dd></div><div><dt>適用表現</dt><dd><p>Persistent facial erythema; no effect on inflammatory lesions.</p></dd></div><div><dt>用法</dt><dd><p>1% cream, pea-sized amount per facial area (five areas) once daily; applied to forehead, nose, each cheek, chin; long-term use up to 52 weeks studied.</p></dd></div><div><dt>關鍵試驗</dt><dd><p>Two identically designed phase 3 REVEAL trials (Kircik et al.; Baumann et al.), randomized, vehicle-controlled, 29 days of treatment then 28 days follow-up; primary endpoint at least 2-grade improvement on both CEA and SSA at 3, 6, 9, 12 hours on day 29 was met (p&lt;0.001). A 52-week open-label safety study also performed.</p></dd></div><div><dt>起效與持續</dt><dd><p>Effect within hours (measured at 3-12 h) and lasts about 12 hours; reversal when stopped; rebound after cessation 2.2% vs 1.1% vehicle.</p></dd></div><div><dt>常見副作用</dt><dd><p>Application-site dermatitis, pruritus, pain, erythema, worsening inflammatory lesions; treatment-emergent AEs 16.4% vs 11.8% vehicle.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: low rebound rate, once daily, long-term data. Cons: modest effect size, cost, limited availability outside US, no effect on papulopustular lesions.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li><a href="https://jddonline.com/articles/dermatology/S1545961618P0097X" target="_blank" rel="noopener">https://jddonline.com/articles/dermatology/S1545961618P0097X</a></li><li><a href="https://jddonline.com/articles/dermatology/S1545961618P1201X" target="_blank" rel="noopener">https://jddonline.com/articles/dermatology/S1545961618P1201X</a></li><li><a href="https://link.springer.com/10.1007/s40267-018-0592-1" target="_blank" rel="noopener">https://link.springer.com/10.1007/s40267-018-0592-1</a></li><li><a href="https://www.aafp.org/afp/2018/0615/p808.pdf" target="_blank" rel="noopener">https://www.aafp.org/afp/2018/0615/p808.pdf</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、指引定位、療效、嚴重風險與禁忌、費用與可得性。</p></div></details>
+<details class="item" id="t-topical_minocycline_foam" data-tags="pp"><summary><span class="n">外用 minocycline 泡沫</span><span class="c">外用藥</span><span class="s">Papulopustular (inflammatory lesions of) rosacea, moderate to severe</span></summary><div class="body"><p class="en">Topical minocycline foam</p><dl><div><dt>機轉</dt><dd><p>Tetracycline-class antibiotic (minocycline 1.5%) in a hydrophobic foam vehicle; anti-inflammatory and antibacterial effects (inhibits matrix metalloproteinases, neutrophil chemotaxis and cytokine release) rather than a classic antimicrobial effect in rosacea.</p></dd></div><div><dt>適用表現</dt><dd><p>Papulopustular (inflammatory lesions of) rosacea, moderate to severe; no established effect on persistent erythema or flushing.</p></dd></div><div><dt>用法</dt><dd><p>Apply once daily to the affected facial area for 12 weeks in the pivotal trials; label dosing is once daily.</p></dd></div><div><dt>關鍵試驗</dt><dd><p>Two identical phase 3 RCTs (FX2016-11, n=751; FX2016-12, n=771), 1,522 adults with moderate-to-severe papulopustular rosacea, 2:1 randomization to FMX103 1.5% or vehicle foam daily for 12 weeks (Stein Gold et al., JAAD 2020). Both co-primary endpoints met in both trials.</p></dd></div><div><dt>療效</dt><dd><p>Inflammatory lesion count change at week 12: -17.57 vs -15.65 (p=0.0031) in FX2016-11 and -18.54 vs -14.88 (p&lt;0.0001) in FX2016-12. IGA treatment success: 52.1% vs 43.0% (p=0.0273) and 49.1% vs 39.0% (p=0.0077). Vehicle-adjusted benefit is modest.</p></dd></div><div><dt>常見副作用</dt><dd><p>Application-site reactions (pain, irritation, pruritus), headache, nasopharyngitis; generally low incidence with no serious treatment-related events in the pivotal trials.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: topical antibiotic option with low systemic exposure, proven versus vehicle, foam vehicle suited to facial skin. Cons: modest vehicle-adjusted effect, no head-to-head versus other topicals in the cited data, cost, daily use, no effect on erythema, flammability.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li>Stein Gold L et al. JAAD 2020, two phase 3 trials of FMX103: <a href="https://scholarlycommons.henryford.com/dermatology_articles/418" target="_blank" rel="noopener">https://scholarlycommons.henryford.com/dermatology_articles/418</a></li><li>Sponsor integrated results: <a href="https://www.biospace.com/foamix-announces-integrated-efficacy-results-from-the-fmx103-1-5-percent-topical-minocycline-foam-phase-3-program-for-rosacea" target="_blank" rel="noopener">https://www.biospace.com/foamix-announces-integrated-efficacy-results-from-the-fmx103-1-5-percent-topical-minocycline-foam-phase-3-program-for-rosacea</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、指引定位、起效與持續、嚴重風險與禁忌、費用與可得性。</p></div></details>
+<details class="item" id="t-oral_low-dose_doxycycline" data-tags="pp oc"><summary><span class="n">口服低劑量 doxycycline</span><span class="c">口服藥</span><span class="s">Papulopustular rosacea (inflammatory lesions)</span></summary><div class="body"><p class="en">Oral low-dose doxycycline</p><dl><div><dt>機轉</dt><dd><p>Tetracycline-class antibiotic; at the 40 mg modified-release dose (30 mg immediate + 10 mg delayed-release beads) it acts at sub-antimicrobial concentrations, mainly by anti-inflammatory effects (MMP inhibition, reduced cytokines and reactive oxygen species) without selecting for antibiotic resistance.</p></dd></div><div><dt>適用表現</dt><dd><p>Papulopustular rosacea (inflammatory lesions); also used off-label in ocular rosacea (meibomian gland dysfunction). Not indicated for erythema or flushing.</p></dd></div><div><dt>用法</dt><dd><p>40 mg modified-release once daily in the morning, typically 12-16 weeks in trials, with maintenance beyond if needed. Off-label: 50-100 mg once or twice daily, usually tapered over weeks to months.</p></dd></div><div><dt>關鍵試驗</dt><dd><p>Two 16-week double-blind placebo-controlled phase 3 trials (studies 301 and 302) of 40 mg modified-release doxycycline, supporting FDA approval; later pooled analysis (Del Rosso et al.) and a 52-week study with randomized maintenance phase. In MVOR-1/2, doxycycline 40 mg served as active comparator (Bhatia et al., JAMA Dermatol 2025).</p></dd></div><div><dt>療效</dt><dd><p>Mean inflammatory lesion change at week 16: -11.8 (study 301) and -9.5 (study 302) vs -5.9 and -4.3 with placebo (about 61% and 46% vs 29% and 20% reduction). In MVOR-1/2 IGA success with doxycycline 40 mg was about 46.1% and 31.4% vs placebo 31.2% and 26.8% (sponsor-reported).</p></dd></div><div><dt>常見副作用</dt><dd><p>Nasopharyngitis, diarrhea, nausea, abdominal pain, hypertension, nasal/sinus congestion; photosensitivity; GI upset more common at higher doses (100 mg).</p></dd></div><div><dt>嚴重風險與禁忌</dt><dd><p>Contraindicated in hypersensitivity to tetracyclines. Avoid in pregnancy and in children under 8 (tooth discoloration, impaired bone growth). Rare benign intracranial hypertension, esophagitis, severe skin reactions, DRESS; Clostridioides difficile risk, less at sub-antimicrobial dose. Possible reduced efficacy of oral contraceptives is debated.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: strong evidence, guideline-endorsed, no antimicrobial resistance selection at 40 mg, fewer GI effects than 100 mg, long clinical experience. Cons: effect modest versus placebo, relapse after stopping, photosensitivity, avoid in pregnancy, newer oral minocycline 40 mg ER outperformed it in head-to-head trials.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li>Review of 40 mg trials: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9285068" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC9285068</a></li><li>Related trial summary: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9651154" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC9651154</a></li><li>Maintenance/remission news summary: <a href="https://www.dermatologytimes.com/view/prolonged-remission-in-rosacea-a-breakthrough-with-subantibiotic-dose-of-oral-doxycycline" target="_blank" rel="noopener">https://www.dermatologytimes.com/view/prolonged-remission-in-rosacea-a-breakthrough-with-subantibiotic-dose-of-oral-doxycycline</a></li><li>MVOR-1/2: <a href="https://jamanetwork.com/journals/jamadermatology/article-abstract/2830693" target="_blank" rel="noopener">https://jamanetwork.com/journals/jamadermatology/article-abstract/2830693</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、指引定位、起效與持續、費用與可得性。</p></div></details>
+<details class="item" id="t-oral_minocycline_er_40_mg" data-tags="pp"><summary><span class="n">口服 minocycline ER 40 mg</span><span class="c">口服藥</span><span class="s"></span></summary><div class="body"><p class="en">Oral minocycline ER 40 mg</p><dl><div><dt>機轉</dt><dd><p>Tetracycline-class antibiotic (minocycline hydrochloride, extended release, DFD-29) at a low dose; anti-inflammatory and immunomodulatory action (MMP and cytokine inhibition, reduced neutrophil activity); extended release intended to lower peak levels and vestibular/GI effects.</p></dd></div><div><dt>用法</dt><dd><p>40 mg once daily; trials used 16 weeks of treatment.</p></dd></div><div><dt>關鍵試驗</dt><dd><p>Two identical phase 3 RCTs, MVOR-1 (NCT05296629) and MVOR-2 (NCT05343455), about 320 adults each with moderate-to-severe papulopustular rosacea, randomized 3:3:2 to DFD-29 40 mg, doxycycline 40 mg or placebo daily for 16 weeks (Bhatia, Del Rosso, Stein Gold et al., JAMA Dermatol 2025;161(5):499-507).</p></dd></div><div><dt>嚴重風險與禁忌</dt><dd><p>Label warnings include anaphylaxis, serious skin reactions (Stevens-Johnson syndrome), DRESS (discontinue immediately), as well as typical minocycline concerns: hepatotoxicity, drug-induced lupus, autoimmune hepatitis, intracranial hypertension, pigmentation, C. difficile colitis. Avoid in pregnancy and in children under 8 (tooth discoloration, bone growth effects).</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: head-to-head superiority over doxycycline 40 mg in IGA success, once daily oral, low dose. Cons: efficacy data from sponsor-funded trials of only 16 weeks, minocycline-specific risks (pigmentation, lupus-like reactions, vestibular effects), cost, new with limited real-world data, avoid in pregnancy.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li>Bhatia N et al. JAMA Dermatol 2025, doi 10.1001/jamadermatol.2024.6542: <a href="https://jamanetwork.com/journals/jamadermatology/article-abstract/2830693" target="_blank" rel="noopener">https://jamanetwork.com/journals/jamadermatology/article-abstract/2830693</a></li><li>FDA approval news: <a href="https://drugs.com/newdrugs/fda-approves-emrosi-minocycline-hydrochloride-rosacea-6402.html" target="_blank" rel="noopener">https://drugs.com/newdrugs/fda-approves-emrosi-minocycline-hydrochloride-rosacea-6402.html</a></li><li>Dermatology Times: <a href="https://www.dermatologytimes.com/view/fda-approves-journey-medical-s-dfd-29-for-rosacea" target="_blank" rel="noopener">https://www.dermatologytimes.com/view/fda-approves-journey-medical-s-dfd-29-for-rosacea</a></li><li>Sponsor MVOR release: <a href="https://www.barchart.com/story/news/31261902/journey-medical-corporation-announces-publication-in-the-journal-of-the-american-medical-association-dermatology-of-the-phase-3-clinical-trial-results-of-emrosi-dfd-29-to-treat-rosacea" target="_blank" rel="noopener">https://www.barchart.com/story/news/31261902/journey-medical-corporation-announces-publication-in-the-journal-of-the-american-medical-association-dermatology-of-the-phase-3-clinical-trial-results-of-emrosi-dfd-29-to-treat-rosacea</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、適用表現、指引定位、療效、起效與持續、常見副作用、費用與可得性。</p></div></details>
+<details class="item" id="t-low-dose_oral_isotretinoin" data-tags="pp ph"><summary><span class="n">低劑量口服 isotretinoin</span><span class="c">口服藥</span><span class="s">Refractory papulopustular rosacea and phymatous rosacea (including rhinophyma)</span></summary><div class="body"><p class="en">Low-dose oral isotretinoin</p><dl><div><dt>機轉</dt><dd><p>Oral retinoid (13-cis-retinoic acid); reduces sebaceous gland size and sebum output, with anti-inflammatory and anti-fibrotic effects. Used at about 0.1-0.5 mg/kg/day in rosacea, well below acne doses.</p></dd></div><div><dt>適用表現</dt><dd><p>Refractory papulopustular rosacea and phymatous rosacea (including rhinophyma); limited effect on persistent erythema or telangiectasia.</p></dd></div><div><dt>關鍵試驗</dt><dd><p>Sbidian et al. 2016 (PubMed 26854486): multicenter double-blind placebo-controlled RCT, 156 patients with difficult-to-treat papulopustular rosacea randomized 2:1 to isotretinoin 0.25 mg/kg/day versus placebo; low-dose isotretinoin was effective. Gollnick (conference report): 12-week double-blind trial, 224 patients with papulopustular/phymatous rosacea, arms isotretinoin 0.1, 0.3, 0.5 mg/kg/day, doxycycline, placebo; 0.3 mg/kg/day optimal, 0.1 inferior to 0.3, 0.5 no better and more irritation. Kirshen et al. systematic review and meta-analysis: 16 studies, 4 randomized, mean dose about 0.3 mg/kg/day.</p></dd></div><div><dt>常見副作用</dt><dd><p>Cheilitis, xerosis of skin, eyes and mucosa, facial dermatitis/irritation, epistaxis, elevated lipids and liver enzymes (dose-related, milder at low dose).</p></dd></div><div><dt>嚴重風險與禁忌</dt><dd><p>Highly teratogenic: contraindicated in pregnancy and requires contraception/pregnancy testing in people able to become pregnant. Other cautions: hypertriglyceridemia, hepatotoxicity, concurrent tetracyclines (intracranial hypertension risk), mood changes reported (causal link debated), bone/musculoskeletal effects.</p></dd></div><div><dt>費用與可得性</dt><dd><p>Generic isotretinoin widely available and relatively inexpensive, but prescribing is restricted by pregnancy-prevention programs and specialist oversight; use is off-label so insurance coverage may vary.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: only systemic option with RCT support for refractory papulopustular and phymatous disease; low dose reduces side effects; generic. Cons: off-label, teratogenicity and monitoring burden, mucocutaneous dryness, relapse after stopping, little benefit for erythema.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li><a href="https://pubmed.ncbi.nlm.nih.gov/26854486/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/26854486/</a></li><li><a href="https://practiceupdate.com/content/efficacy-of-treatment-with-low-dose-isotretinoin-in-patients-with-rosacea/170047" target="_blank" rel="noopener">https://practiceupdate.com/content/efficacy-of-treatment-with-low-dose-isotretinoin-in-patients-with-rosacea/170047</a></li><li><a href="https://mdedge.com/familymedicine/article/30428/dermatology/optimal-isotretinoin-dosing-rosacea-identified" target="_blank" rel="noopener">https://mdedge.com/familymedicine/article/30428/dermatology/optimal-isotretinoin-dosing-rosacea-identified</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、用法、指引定位、療效、起效與持續。</p></div></details>
+<details class="item" id="t-vascular_laser_and_ipl" data-tags="er"><summary><span class="n">血管雷射與 IPL</span><span class="c">處置</span><span class="s">Persistent centrofacial erythema and telangiectasia</span></summary><div class="body"><p class="en">Vascular laser and IPL</p><dl><div><dt>機轉</dt><dd><p>Light-based devices using selective photothermolysis: chromophore oxyhemoglobin absorbs light (PDL 585-595 nm, KTP 532 nm, Nd:YAG 1064 nm, IPL broadband about 500-1200 nm), heating and coagulating ectatic dermal vessels and reducing erythema and telangiectasia.</p></dd></div><div><dt>適用表現</dt><dd><p>Persistent centrofacial erythema and telangiectasia; some reports of benefit for flushing and, with IPL, papulopustular symptoms. Not a primary treatment for phymatous disease (ablative lasers are used there).</p></dd></div><div><dt>關鍵試驗</dt><dd><p>Husein-ElAhmed &amp; Steinhoff, Int J Dermatol 2021: systematic review with meta-analysis of 12 records; PDL had the most robust evidence, and no significant difference in erythema or telangiectasia outcomes was found between PDL and other light-based devices (Nd:YAG, IPL); evidence quality low to moderate. Martignago et al., Indian J Dermatol Venereol Leprol 2024: PRISMA systematic review of 14 IPL studies; most showed positive effects on telangiectasia and erythema with transitory adverse effects, but methodological quality was poor.</p></dd></div><div><dt>常見副作用</dt><dd><p>Transient erythema, edema, pain; purpura (especially with PDL at purpuric settings); crusting or blistering; transient pigment change.</p></dd></div><div><dt>費用與可得性</dt><dd><p>Out-of-pocket cost per session is moderate to high and often not insurance-covered when considered cosmetic; requires clinic with device and trained operator.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: treats erythema and telangiectasia that medicines do not; short sessions; minimal systemic risk. Cons: repeated sessions, cost, downtime (purpura with PDL), pigment risk in darker skin, low-to-moderate quality evidence and non-standardized protocols, recurrence.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li><a href="https://bohrium.dp.tech/paper/arxiv/34089264" target="_blank" rel="noopener">https://bohrium.dp.tech/paper/arxiv/34089264</a></li><li><a href="https://www.guidelinecentral.com/pubmed/39152889" target="_blank" rel="noopener">https://www.guidelinecentral.com/pubmed/39152889</a></li><li><a href="https://ijdvl.com/?p=27301" target="_blank" rel="noopener">https://ijdvl.com/?p=27301</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、用法、指引定位、療效、起效與持續。</p></div></details>
+<details class="item" id="t-ocular_rosacea_management" data-tags="oc"><summary><span class="n">眼型酒糟處理</span><span class="c">眼型專屬</span><span class="s">Ocular rosacea: blepharitis, meibomian gland dysfunction, dry eye, chalazia, conjunctivitis, and in severe…</span></summary><div class="body"><p class="en">Ocular rosacea management</p><dl><div><dt>機轉</dt><dd><p>Stepwise multimodal care of rosacea affecting eyelids and ocular surface (meibomian gland dysfunction, blepharitis, dry eye, keratitis): lid hygiene and warm compresses, lubricants, topical cyclosporine (calcineurin inhibitor, immunomodulator), topical antibiotics such as azithromycin, and oral tetracyclines (doxycycline; antimicrobial plus anti-inflammatory/MMP-inhibiting effects).</p></dd></div><div><dt>適用表現</dt><dd><p>Ocular rosacea: blepharitis, meibomian gland dysfunction, dry eye, chalazia, conjunctivitis, and in severe cases keratitis.</p></dd></div><div><dt>關鍵試驗</dt><dd><p>Randomized trial (2015, Int J Ophthalmol, 38 patients): topical cyclosporine versus oral doxycycline; both improved ocular signs, cyclosporine better for symptoms and eyelid signs. Systematic review of ocular rosacea treatment: direct comparisons lacking; pooled response rates highest for topical antimicrobials, oral antibiotics, IPL and cyclosporine as single agents.</p></dd></div><div><dt>常見副作用</dt><dd><p>Cyclosporine drops: burning or stinging. Doxycycline: gastrointestinal upset, photosensitivity. Lid hygiene: minimal.</p></dd></div><div><dt>嚴重風險與禁忌</dt><dd><p>Tetracyclines are contraindicated in pregnancy and in young children (tooth discoloration); rare intracranial hypertension, esophagitis. Severe ocular rosacea with corneal involvement needs ophthalmologist care to prevent vision-threatening complications.</p></dd></div><div><dt>優缺點</dt><dd><p>Pros: stepwise, mostly low-risk options; combination approach appears effective. Cons: evidence mostly small trials and expert consensus; long-term adherence needed; doxycycline side effects limit prolonged use; no approved ocular-specific agent.</p></dd></div><div><dt>參考文獻</dt><dd><ul><li><a href="https://doaj.org/article/21ad7f4664e943188535f9be961b0a14" target="_blank" rel="noopener">https://doaj.org/article/21ad7f4664e943188535f9be961b0a14</a></li><li><a href="https://bohrium.dp.tech/paper/arxiv/923195618447327236" target="_blank" rel="noopener">https://bohrium.dp.tech/paper/arxiv/923195618447327236</a></li><li><a href="https://www.eyes.nhs.scot/eyecare-guidelines/section-1-eyelids/111-ocular-rosacea/" target="_blank" rel="noopener">https://www.eyes.nhs.scot/eyecare-guidelines/section-1-eyelids/111-ocular-rosacea/</a></li><li><a href="https://nutrition-evidence.com/article/440255/treatment-of-ocular-rosacea-a-practical-review-from-an-interdisciplinary-approach" target="_blank" rel="noopener">https://nutrition-evidence.com/article/440255/treatment-of-ocular-rosacea-a-practical-review-from-an-interdisciplinary-approach</a></li></ul></dd></div></dl><p class="gap">以下欄位因來源不足而未列出：核准狀態、用法、指引定位、療效、起效與持續、費用與可得性。</p></div></details>
+  </div>
+</section>
+
+<section class="sec" id="triggers" aria-labelledby="h-trig">
+  <h2 id="h-trig" class="reveal">哪些食物與習慣會讓臉更紅</h2>
+  <p class="lead reveal">多數數字來自美國酒糟協會（NRS）的病友自述調查，代表病友認為什麼會讓症狀加重，並非已證實的因果。飲食方面缺少設計良好的對照研究，也沒有適用所有人的建議，每個人的誘因不同。</p>
+  <h3 class="sub" id="h-food">食物與飲料誘因</h3>
+  <ul class="trig" aria-labelledby="h-food">
+<li><div class="fig"><b>52%</b><small>紅酒；烈酒 42%</small></div><div class="tx"><h4>酒精（紅酒、烈酒）</h4><p>NRS 病友調查中，紅酒是最常被點名的酒類（52%），其次是烈酒（42%）；另一份 1999 年調查中紅酒為 48% 以上。酒精與酒糟風險升高有關的說法來自回顧文獻，皆非對照試驗。</p><p class="adv"><b>建議</b>最保險的做法是少喝或不喝；若要喝，先觀察自己的反應。</p><p class="evd">證據：病友自述調查；回顧文獻</p></div></li>
+<li><div class="fig"><b>33%</b><small>熱咖啡；熱茶 30%</small></div><div class="tx"><h4>熱飲（熱咖啡、熱茶）</h4><p>NRS 調查中 33% 的人表示熱咖啡會誘發、30% 表示熱茶會。但咖啡與咖啡因的證據方向不一致：部分研究提示喝咖啡可能降低酒糟風險。</p><p class="adv"><b>建議</b>若熱飲會讓你潮紅，改放涼再喝，並以自己的反應為準。</p><p class="evd">證據：病友自述調查；觀察性研究方向不一</p></div></li>
+<li><div class="fig"><b>61%</b><small>受影響者中點名辣椒的比例</small></div><div class="tx"><h4>辛辣食物</h4><p>NRS 2003 年調查（逾 500 人）中，受辛辣食物影響的人有 61% 列出辣椒。但有研究並未證實辛辣食物與酒糟的因果關係，推測只是加重潮紅、刺痛與灼熱感。</p><p class="adv"><b>建議</b>吃辣後會潮紅或灼熱的人可以避開；沒有反應的人不必一律禁止。</p><p class="evd">證據：病友自述調查；因果未證實</p></div></li>
+<li><div class="fig"><small>以通報為主，沒有比例數據</small></div><div class="tx"><h4>含肉桂醛的食物（番茄、柑橘、巧克力、肉桂）</h4><p>回顧文獻把含肉桂醛的食物列為常被通報的誘因。這類證據多來自病友通報，缺少對照研究。</p><p class="adv"><b>建議</b>逐一試驗、記錄反應，不要整類食物一次全戒。</p><p class="evd">證據：回顧文獻整理；原文未取得</p></div></li>
+<li><div class="fig"><small>以通報為主，沒有比例數據</small></div><div class="tx"><h4>高組織胺食物（陳年起司、葡萄酒、加工肉品）</h4><p>同一份回顧把高組織胺食物列為常被通報的誘因。證據強度與上一項相同：以通報為主，缺乏對照研究。</p><p class="adv"><b>建議</b>同上；若與酒精同時出現，較難判斷是哪一個造成。</p><p class="evd">證據：回顧文獻整理；原文未取得</p></div></li>
+  </ul>
+  <h3 class="sub" id="h-life">應避免的生活習慣</h3>
+  <ul class="trig" aria-labelledby="h-life">
+<li><div class="fig"><b>81%</b><small>最常見的誘因</small></div><div class="tx"><h4>日曬</h4><p>NRS 2002 年調查（1,066 人）中 81% 表示日曬會加重酒糟，63% 把它列為前三大誘因之一。</p><p class="adv"><b>建議</b>每天防曬，戴帽、避開正午強光；可參考「誘因避免與基礎護理」一項的用法。</p><p class="evd">證據：病友自述調查</p></div></li>
+<li><div class="fig"><b>79%</b><small>64% 列為前三大</small></div><div class="tx"><h4>情緒壓力</h4><p>同一份調查中 79% 點名情緒壓力，64% 把它列為前三大誘因。</p><p class="adv"><b>建議</b>壓力無法完全避免，但可留意哪些情境容易讓臉發紅。</p><p class="evd">證據：病友自述調查</p></div></li>
+<li><div class="fig"><b>75%</b><small></small></div><div class="tx"><h4>炎熱天氣與高溫環境</h4><p>炎熱天氣是 75%。NRS 另有針對熱源的調查（2010），也指出暴露於熱源會使酒糟惡化。</p><p class="adv"><b>建議</b>少待在悶熱空間，如桑拿、蒸氣室；外出盡量避開高溫時段。</p><p class="evd">證據：病友自述調查</p></div></li>
+<li><div class="fig"><b>57%</b><small></small></div><div class="tx"><h4>風</h4><p>強風為 57%（同一份調查整理表）。</p><p class="adv"><b>建議</b>寒冷有風時以圍巾或口罩保護臉部。</p><p class="evd">證據：病友自述調查</p></div></li>
+<li><div class="fig"><b>51%</b><small>出處未逐一確認</small></div><div class="tx"><h4>熱水澡、泡湯</h4><p>搜尋結果中有一份調查把熱水澡列為 51%，通用建議是用冷水或溫水，避免熱水池與蒸氣。這個數字我沒能確認原始出處，請當作參考。</p><p class="adv"><b>建議</b>改用溫水，洗臉用微溫的水。</p><p class="evd">證據：二手整理；較低確定度</p></div></li>
+<li><div class="fig"><small>以通報為主，沒有比例數據</small></div><div class="tx"><h4>劇烈運動，尤其在炎熱環境</h4><p>多數來源把劇烈運動，特別是高溫下的運動，列為誘因，但並不建議完全不運動。有來源建議改做瑜伽、游泳等低衝擊運動。</p><p class="adv"><b>建議</b>選在涼爽處、強度中等、運動時備毛巾與冷水。</p><p class="evd">證據：臨床與健康網站建議；非試驗證據</p></div></li>
+<li><div class="fig"><small>以通報為主，沒有比例數據</small></div><div class="tx"><h4>含酒精或刺激成分的保養品</h4><p>多份來源建議避開含酒精（特別是變性酒精）、金縷梅、薄荷腦、樟腦、濃香料的產品，以及磨砂、強效去角質。這與本報告「誘因避免與基礎護理」一項的建議一致。</p><p class="adv"><b>建議</b>新產品一次只加一樣，間隔至少 48 小時再試下一樣。</p><p class="evd">證據：皮膚科與健康網站建議；非試驗證據</p></div></li>
+  </ul>
+  <h3 class="sub">這一章沒有證實的部分</h3>
+  <ul class="plain">
+<li>吸菸：本次搜尋沒有找到可用的資料，所以不列為結論。</li><li>Li 等 2018 年的咖啡與酒糟風險世代研究：搜尋沒有找到該研究，報告只引用「部分研究提示咖啡可能降低風險」這個方向。</li>
+  </ul>
+</section>
+
+<section class="sec" id="compare" aria-labelledby="h-compare">
+  <h2 id="h-compare" class="reveal">一張表看完差異</h2>
+  <p class="lead reveal">各欄只取每項的重點句；完整內容請展開上方清單。「—」代表來源不足、未列出。</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th scope="col">處理方式</th><th scope="col">適用表現</th><th scope="col">用法</th><th scope="col">療效</th></tr></thead>
+      <tbody>
+<tr><th scope="row">誘因避免與基礎護理<span>非藥物</span></th><td data-l="適用表現">All rosacea phenotypes, especially flushing and persistent erythema, plus sensitive skin symptoms (burning, stinging, dryness)</td><td data-l="用法">No dose. Typical advice: cleanse once or twice daily with a gentle non-soap cleanser, apply moisturizer daily, broad-spectrum sunscreen (SPF 30-50, mineral filters often…</td><td data-l="療效">No quantified lesion-count or IGA effect. Benefit is expected on barrier function, comfort and reduction of flare frequency</td></tr>
+<tr><th scope="row">外用 metronidazole<span>外用藥</span></th><td data-l="適用表現">Papulopustular rosacea (inflammatory lesions)</td><td data-l="用法">0.75% applied twice daily or 1% applied once daily to affected areas</td><td data-l="療效">—</td></tr>
+<tr><th scope="row">外用 azelaic acid<span>外用藥</span></th><td data-l="適用表現">Mild-to-moderate papulopustular rosacea</td><td data-l="用法">15% gel or foam twice daily</td><td data-l="療效">About 50-60% mean reduction in inflammatory lesions at 15 weeks, approximately 10-18 percentage points better than vehicle</td></tr>
+<tr><th scope="row">外用 ivermectin<span>外用藥</span></th><td data-l="適用表現">Papulopustular rosacea (inflammatory papules and pustules)</td><td data-l="用法">1% cream once daily to the face, for up to 12 weeks in pivotal trials</td><td data-l="療效">Inflammatory lesion count reduction about 76.0% and 75.0% vs 50.0% for vehicle at week 12. IGA clear/almost clear 38-40% vs 12-19% with vehicle.</td></tr>
+<tr><th scope="row">外用 brimonidine<span>外用藥</span></th><td data-l="適用表現">Persistent facial erythema (non-transient)</td><td data-l="用法">0.33% gel (0.5% brimonidine tartrate), pea-sized amount per facial area (five areas) once daily</td><td data-l="療效">—</td></tr>
+<tr><th scope="row">外用 oxymetazoline<span>外用藥</span></th><td data-l="適用表現">Persistent facial erythema</td><td data-l="用法">1% cream, pea-sized amount per facial area (five areas) once daily</td><td data-l="療效">—</td></tr>
+<tr><th scope="row">外用 minocycline 泡沫<span>外用藥</span></th><td data-l="適用表現">Papulopustular (inflammatory lesions of) rosacea, moderate to severe</td><td data-l="用法">Apply once daily to the affected facial area for 12 weeks in the pivotal trials</td><td data-l="療效">Inflammatory lesion count change at week 12: -17.57 vs -15.65 (p=0.0031) in FX2016-11 and -18.54 vs -14.88 (p&lt;0.0001) in FX2016-12. IGA treatment success: 52.1% vs 43.0%…</td></tr>
+<tr><th scope="row">口服低劑量 doxycycline<span>口服藥</span></th><td data-l="適用表現">Papulopustular rosacea (inflammatory lesions)</td><td data-l="用法">40 mg modified-release once daily in the morning, typically 12-16 weeks in trials, with maintenance beyond if needed. Off-label: 50-100 mg once or twice daily, usually…</td><td data-l="療效">Mean inflammatory lesion change at week 16: -11.8 (study 301) and -9.5 (study 302) vs -5.9 and -4.3 with placebo (about 61% and 46% vs 29% and 20% reduction). In…</td></tr>
+<tr><th scope="row">口服 minocycline ER 40 mg<span>口服藥</span></th><td data-l="適用表現">—</td><td data-l="用法">40 mg once daily</td><td data-l="療效">—</td></tr>
+<tr><th scope="row">低劑量口服 isotretinoin<span>口服藥</span></th><td data-l="適用表現">Refractory papulopustular rosacea and phymatous rosacea (including rhinophyma)</td><td data-l="用法">—</td><td data-l="療效">—</td></tr>
+<tr><th scope="row">血管雷射與 IPL<span>處置</span></th><td data-l="適用表現">Persistent centrofacial erythema and telangiectasia</td><td data-l="用法">—</td><td data-l="療效">—</td></tr>
+<tr><th scope="row">眼型酒糟處理<span>眼型專屬</span></th><td data-l="適用表現">Ocular rosacea: blepharitis, meibomian gland dysfunction, dry eye, chalazia, conjunctivitis, and in severe cases keratitis.</td><td data-l="用法">—</td><td data-l="療效">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</div>
+
+<div class="field-red" id="check">
+  <div class="wrap">
+    <section class="sec" aria-labelledby="h-check">
+      <h2 id="h-check" class="reveal">查核後，哪些數字站得住腳</h2>
+      <p class="lead reveal">我們用網路搜尋比對了報告中的關鍵數字、核准日期與引用。僅看過摘要與二手來源，沒有逐篇讀完全文。</p>
+      <ul class="facts">
+<li><b class="ok">屬實</b><span class="cl">Emrosi（DFD-29，minocycline ER 40 mg）2024 年 11 月獲 FDA 核准</span><span class="ev">Dermatology Times、Drugs.com、Practical Dermatology</span></li>
+<li><b class="ok">屬實</b><span class="cl">MVOR-1/2：JAMA Dermatol 2025;161(5):499-507，3:3:2 隨機，16 週</span><span class="ev">JAMA Dermatology 摘要頁、Dermatology Times</span></li>
+<li><b class="ok">屬實</b><span class="cl">MVOR doxycycline 40 mg IGA 成功率 46.1% / 31.4%，安慰劑 31.2% / 26.8%</span><span class="ev">Dermatology Times 數據。DFD-29 本身為 65.0% / 60.1%，報告該欄被標為不確定而省略</span></li>
+<li><b class="warn">大致屬實，需補充</b><span class="cl">Ivermectin 1% 三期：病灶減少 76.0%、75.0% vs 安慰劑 50.0%；IGA 清除/近清除 38-40% vs 12-19%</span><span class="ev">PubMed 24595578。IGA 為 38.4%/40.1% vs 11.6%/18.8%；來源僅寫兩個對照組「50.0%」，不宜逐試驗歸屬。廠商資助</span></li>
+<li><b class="warn">部分不符</b><span class="cl">Ivermectin 治療相關不良事件約 2.6-4.2%，與對照組相當</span><span class="ev">搜尋來源為 3.4% vs 7.2%（藥物組較低）；2.6-4.2% 未能證實，應以 3.4% vs 7.2% 為準</span></li>
+<li><b class="ok">屬實</b><span class="cl">Oracea 40 mg 二項三期：病灶變化 -11.8 vs -5.9、-9.5 vs -4.3</span><span class="ev">Del Rosso 等，J Am Acad Dermatol 2007（PubMed 17367893），共 537 人；紅斑未顯著改善</span></li>
+<li><b class="warn">未能證實</b><span class="cl">Oracea 2006 年核准</span><span class="ev">搜尋結果無日期；報告內未採用，需查 Drugs@FDA</span></li>
+<li><b class="ok">屬實</b><span class="cl">Mirvaso（brimonidine 0.33%）2013 年核准</span><span class="ev">Galderma 新聞稿 2013-08-26（Drugs.com 記為 08-23）</span></li>
+<li><b class="ok">屬實</b><span class="cl">Rhofade（oxymetazoline 1%）2017 年 1 月核准</span><span class="ev">Drugs.com 記載 2017-01-18</span></li>
+<li><b class="ok">屬實，年份為 2020</b><span class="cl">Zilxi（minocycline 1.5% 泡沫）核准</span><span class="ev">Menlo Therapeutics 2020-05-29（先前搜尋回覆曾說 2018，該說法錯誤）</span></li>
+<li><b class="warn">未重新逐項核對</b><span class="cl">Minocycline 泡沫三期（n=751/771）：IGA 52.1% vs 43.0%、49.1% vs 39.0%</span><span class="ev">來自 Stein Gold 等 JAAD 2020（子代理人所引），本次未獨立驗證</span></li>
+<li><b class="ok">屬實</b><span class="cl">低劑量 isotretinoin：Sbidian 2016，156 人，2:1，0.25 mg/kg/日</span><span class="ev">PubMed 26854486：異維A酸 108、安慰劑 48，J Invest Dermatol 2016;136:1124</span></li>
+<li><b class="warn">補充</b><span class="cl">（報告未列）Sbidian 主要結果與復發</span><span class="ev">4 個月達 ≥90% 病灶減少：57.4% vs 10.4%；追蹤者中 58.3% 復發，中位 15 週</span></li>
+<li><b class="warn">部分證實</b><span class="cl">指引：ROSCO 2017/2019、NRS 2025 治療演算法</span><span class="ev">2019 ROSCO 為表型導向共識；NRS 演算法 2025-03-24 發表。各藥在指引中的具體定位，各 JSON 皆標為不確定</span></li>
+<li><b class="ok">屬實</b><span class="cl">日曬 81%、情緒壓力 79%、炎熱天氣 75%、風 57%（NRS 2002，1,066 人）</span><span class="ev">NRS tripwires 頁面與 PMC 表格；為病友自述調查，不是因果證據</span></li>
+<li><b class="ok">屬實</b><span class="cl">紅酒 52%、烈酒 42%、熱咖啡 33%、熱茶 30%；辛辣食物受影響者中 61% 點名辣椒</span><span class="ev">NRS 1999/2005/2003 食物與辛辣調查，數字來自搜尋摘要；各調查年份與樣本不同，不能直接互比</span></li>
+<li><b class="warn">出處未能確認</b><span class="cl">熱水澡誘發比例 51%</span><span class="ev">搜尋摘要只說「一份調查」，沒有指出是哪一份；網站標為較低確定度</span></li>
+<li><b class="warn">方向有限度支持</b><span class="cl">咖啡可能降低酒糟風險</span><span class="ev">回顧文獻提到部分研究有此提示；原先想核對的 Li 2018 世代研究未在搜尋中找到，因此不引用具體數字</span></li>
+      </ul>
+      <h3 style="margin-top:64px;font-size:clamp(26px,3.4vw,44px)" class="reveal">使用前要知道的限制</h3>
+      <ol class="issues">
+<li><b>覆蓋不完整</b>：許多欄位（核准狀態、指引定位、成本、持續性）因搜尋僅為摘要層級而被標為 [uncertain]，並從報告中略去。報告不是完整的比較表。</li><li><b>引用品質</b>：部分參考連結是聚合網站（bohrium、practiceupdate、barchart、medicaldialogues），非 PubMed/DOI，使用前應回溯原文。</li><li><b>廠商偏誤</b>：ivermectin、Emrosi 等療效數據來自廠商資助試驗。</li><li><b>台灣資訊缺漏</b>：TFDA 核准與健保給付狀況在所有項目中都未能確認。</li><li><b>誘因章節</b>：食物與生活習慣的數字多為病友自述，且吸菸未查證，詳見網站與 triggers.json。</li><li>本報告為資訊整理，不構成醫療建議；治療選擇請由皮膚科醫師評估。</li>
+      </ol>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+<section class="sec sources" id="sources" aria-labelledby="h-src">
+  <h2 id="h-src" class="reveal">資料來源</h2>
+  <p class="lead reveal">各項處理方式的參考文獻列在其展開內容的「參考文獻」中；以下是事實查核與「誘因」章節使用的來源。</p>
+  <ul>
+<li><a href="https://www.dermatologytimes.com/view/journey-medical-publishes-full-phase-3-trial-results-for-dfd-29" target="_blank" rel="noopener">Dermatology Times：DFD-29 全文結果</a></li><li><a href="https://jamanetwork.com/journals/jamadermatology/article-abstract/2830693" target="_blank" rel="noopener">JAMA Dermatology MVOR 摘要</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/24595578/" target="_blank" rel="noopener">Ivermectin 三期 PubMed</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/26854486/" target="_blank" rel="noopener">Sbidian 2016 PubMed</a></li><li><a href="https://www.pubmed.gov/17367893/" target="_blank" rel="noopener">Oracea 三期 PubMed</a></li><li><a href="https://www.galderma.com/us/news/galderma-receives-fda-approval-mirvaso-first-and-only-fda-approved-topical-treatment" target="_blank" rel="noopener">Galderma Mirvaso 核准</a></li><li><a href="https://dermatologytimes.com/view/reviewing-the-rosacea-pipeline-a-look-at-the-last-10-years" target="_blank" rel="noopener">Dermatology Times：酒糟膚質藥物管線</a></li><li><a href="https://www.guidelinecentral.com/guideline/4509293/" target="_blank" rel="noopener">Guideline Central：NRS 治療演算法</a></li><li><a href="https://www.rosacea.org/patients/materials/tripwires.html" target="_blank" rel="noopener">NRS：病友常見誘因（tripwires）</a></li><li><a href="https://rosacea.org/rosacea-review/1999/winter/from-chocolate-to-wine-and-tomatoes-food-survey-pinpoints-rosacea-triggers" target="_blank" rel="noopener">NRS 1999：食物調查，從巧克力到葡萄酒與番茄</a></li><li><a href="https://www.rosacea.org/press/2003/july/new-survey-pinpoints-spicy-foods-that-may-often-trigger-rosacea" target="_blank" rel="noopener">NRS 2003：辛辣食物調查</a></li><li><a href="https://www.rosacea.org/press/2010/may/new-survey-finds-rosacea-worsens-with-exposure-to-heat-sources" target="_blank" rel="noopener">NRS 2010：熱源調查</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7384638/table/T3" target="_blank" rel="noopener">PMC 文獻表格：誘因比例（炎熱天氣、風）</a></li><li><a href="https://jcadonline.com/rosacea-diet-new-2021/" target="_blank" rel="noopener">Rosacea and Diet: What is New in 2021?</a></li><li><a href="https://www.news-medical.net/health/Lifestyle-Changes-for-Rosacea.aspx" target="_blank" rel="noopener">News-Medical：酒糟的生活調整</a></li>
+  </ul>
+</section>
+</div>
+</main>
+
+<footer>
+  <div class="name">酒糟膚質</div>
+  <p>本頁為研究資訊整理，不構成醫療建議；是否用藥、用哪一種，請由皮膚科醫師評估。整理日期 2026-10-30。</p>
+</footer>
+
+<script>
+(function(){
+  var items=[].slice.call(document.querySelectorAll('.item'));
+  var chips=document.getElementById('chips'), count=document.getElementById('count'), tog=document.getElementById('toggle');
+  var cur='all';
+  function apply(){
+    var n=0;
+    items.forEach(function(it){
+      var show=cur==='all'||(' '+it.dataset.tags+' ').indexOf(' '+cur+' ')>-1;
+      it.hidden=!show; if(show)n++;
+    });
+    count.textContent='顯示 '+n+' / '+items.length+' 項';
+  }
+  chips.hidden=false; tog.hidden=false;
+  chips.addEventListener('click',function(e){
+    var b=e.target.closest('.chip'); if(!b)return;
+    cur=b.dataset.f;
+    [].forEach.call(chips.children,function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});
+    apply();
+  });
+  var open=false;
+  tog.addEventListener('click',function(){
+    open=!open;
+    items.forEach(function(it){it.open=open});
+    tog.textContent=open?'全部收合':'全部展開';
+  });
+  apply();
+  var els=[].slice.call(document.querySelectorAll('.reveal'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el,i){ el.style.transitionDelay=(i%4)*70+'ms'; io.observe(el); });
+  } else els.forEach(function(el){el.classList.add('in')});
+  setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},1500);
+})();
+</script>
+</body>
+</html>
